@@ -1,0 +1,12 @@
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\bin\Debug\net6.0\Corendon.Attributes.deps.json
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\bin\Debug\net6.0\Corendon.Attributes.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\bin\Debug\net6.0\Corendon.Attributes.pdb
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.csproj.AssemblyReference.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.AssemblyInfoInputs.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.AssemblyInfo.cs
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.csproj.CoreCompileInputs.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\refint\Corendon.Attributes.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\Corendon.Attributes.pdb
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Attributes\obj\Debug\net6.0\ref\Corendon.Attributes.dll

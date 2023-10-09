@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Abstract\Announcement\AnnouncementEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\Announcement\AnnouncementEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\Company\CompanyDepartmentEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\Company\CompanyDepartmentEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\Company\CompanyEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\Company\CompanyEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\User\UserAnnouncementCommentEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\User\UserAnnouncementCommentEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\User\UserAnnouncementVoteEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\User\UserAnnouncementVoteEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\User\UserEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\User\UserEntity\Commands\Response\" />
+    <Folder Include="Commands\Abstract\User\UserNotificationEntity\Commands\Request\" />
+    <Folder Include="Commands\Abstract\User\UserNotificationEntity\Commands\Response\" />
+    <Folder Include="Commands\Concrate\Announcement\" />
+    <Folder Include="Commands\Concrate\Company\" />
+    <Folder Include="Commands\Concrate\User\" />
+    <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Abstract\Company\CompanyEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\Company\CompanyEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserAnnouncementCommentEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserAnnouncementCommentEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserAnnouncementVoteEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserAnnouncementVoteEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserNotificationEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Abstract\User\UserNotificationEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\Announcement\AnnouncementEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\Announcement\AnnouncementEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\Company\CompanyEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\Company\CompanyEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserAnnouncementCommentEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserAnnouncementCommentEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserAnnouncementVoteEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserAnnouncementVoteEntity\QueryHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserNotificationEntity\CommandHandlers\" />
+    <Folder Include="Handlers\Concrate\User\UserNotificationEntity\QueryHandlers\" />
+    <Folder Include="Queries\Abstract\Announcement\AnnouncementEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\Announcement\AnnouncementEntity\Queries\Response\" />
+    <Folder Include="Queries\Abstract\Company\CompanyDepartmentEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\Company\CompanyDepartmentEntity\Queries\Response\" />
+    <Folder Include="Queries\Abstract\Company\CompanyEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\Company\CompanyEntity\Queries\Response\" />
+    <Folder Include="Queries\Abstract\User\UserAnnouncementCommentEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\User\UserAnnouncementCommentEntity\Queries\Response\" />
+    <Folder Include="Queries\Abstract\User\UserAnnouncementVoteEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\User\UserAnnouncementVoteEntity\Queries\Response\" />
+    <Folder Include="Queries\Abstract\User\UserNotificationEntity\Queries\Request\" />
+    <Folder Include="Queries\Abstract\User\UserNotificationEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\Announcement\AnnouncementEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\Announcement\AnnouncementEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\Company\CompanyDepartmentEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\Company\CompanyDepartmentEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\Company\CompanyEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\Company\CompanyEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\User\UserAnnouncementCommentEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\User\UserAnnouncementCommentEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\User\UserAnnouncementVoteEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\User\UserAnnouncementVoteEntity\Queries\Response\" />
+    <Folder Include="Queries\Concrate\User\UserNotificationEntity\Queries\Request\" />
+    <Folder Include="Queries\Concrate\User\UserNotificationEntity\Queries\Response\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corendon.Application\Corendon.Application.csproj" />
+    <ProjectReference Include="..\Corendon.ViewModels\Corendon.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

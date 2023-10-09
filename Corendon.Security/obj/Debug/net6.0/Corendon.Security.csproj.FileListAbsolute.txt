@@ -1,0 +1,12 @@
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\bin\Debug\net6.0\Corendon.Security.deps.json
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\bin\Debug\net6.0\Corendon.Security.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\bin\Debug\net6.0\Corendon.Security.pdb
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.csproj.AssemblyReference.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.AssemblyInfoInputs.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.AssemblyInfo.cs
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.csproj.CoreCompileInputs.cache
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\refint\Corendon.Security.dll
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\Corendon.Security.pdb
+C:\Users\samet.senturk\source\repos\Corendon\Corendon.Security\obj\Debug\net6.0\ref\Corendon.Security.dll
