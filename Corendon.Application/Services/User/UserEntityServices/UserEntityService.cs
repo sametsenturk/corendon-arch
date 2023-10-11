@@ -1,5 +1,6 @@
 ﻿using Corendon.Application.Services.BaseServices;
 using Corendon.Data.Entity.Abstract.User;
+using Corendon.Data.Entity.Concrate.User;
 using Corendon.Repository.Repositories.User.UserEntityRepositories;
 
 namespace Corendon.Application.Services.User.UserEntityServices
@@ -13,10 +14,6 @@ namespace Corendon.Application.Services.User.UserEntityServices
             _userEntityRepository = userEntityRepository;
         }
 
-        public async Task<IList<IUserEntity>> GetUserListAsync()
-        {
-            var users = await _userEntityRepository.GetListAsync();
-            return (IList<IUserEntity>)users.ToList();
-        }
+        public async Task<IEnumerable<IUserEntity>> GetUserListAsync() => await _userEntityRepository.GetListAsync();
     }
 }

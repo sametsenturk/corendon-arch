@@ -3,8 +3,8 @@ using Corendon.ViewModels.Abstract.User;
 
 namespace Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Response
 {
-    public class GetAllUserQueryResponse : IGetAllUserQueryResponse
+    public sealed class GetAllUserQueryResponse : IGetAllUserQueryResponse
     {
-        public IUserEntityVM? User { get; set; }
+        public IList<IUserEntityVM>? User { get; set; }
     }
 }

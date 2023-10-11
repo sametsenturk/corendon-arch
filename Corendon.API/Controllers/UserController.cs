@@ -1,5 +1,6 @@
-﻿using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Request;
-using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Response;
+﻿using Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Request;
+using Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Response;
+using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Request;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +18,7 @@ namespace Corendon.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllUserQueryRequest request)
         {
-            IList<GetAllUserQueryResponse> response = await _mediator.Send(request);
+            IGetAllUserQueryResponse response = await _mediator.Send(request);
             return Ok(response);
         }
 

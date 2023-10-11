@@ -2,7 +2,7 @@
 
 namespace Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Request
 {
-    public class GetAllUserQueryRequest : IGetAllUserQueryRequest
+    public sealed class GetAllUserQueryRequest : IGetAllUserQueryRequest
     {
     }
 }

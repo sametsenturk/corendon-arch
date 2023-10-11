@@ -19,6 +19,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddBackendDataEF<CorendonDbContext>("CorendonDb", builder.Configuration);
 
+#region Entity Inheritance Registiration
+
+builder.Services.RegisterEntityInheritances();
+
+#endregion
+
 #region Factory Service Registiration
 
 builder.Services.RegisterAnnouncementFactories();
@@ -59,7 +65,7 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.Get
 
 #region CQRS Query Handler Registiration
 
-
+builder.Services.RegisterUserHandlers();
 
 #endregion
 

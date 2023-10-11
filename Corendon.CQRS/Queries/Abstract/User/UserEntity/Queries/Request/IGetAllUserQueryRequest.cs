@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Request
 {
-    public interface IGetAllUserQueryRequest : IRequest<IList<GetAllUserQueryResponse>>
+    public interface IGetAllUserQueryRequest : IRequest<GetAllUserQueryResponse>
     {
     }
 }

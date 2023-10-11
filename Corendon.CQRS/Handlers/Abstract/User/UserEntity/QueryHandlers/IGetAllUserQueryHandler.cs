@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Corendon.CQRS.Handlers.Abstract.User.UserEntity.QueryHandlers
 {
-    public interface IGetAllUserQueryHandler : IRequestHandler<GetAllUserQueryRequest, IList<GetAllUserQueryResponse>>
+    public interface IGetAllUserQueryHandler : IRequestHandler<GetAllUserQueryRequest, GetAllUserQueryResponse>
     {
     }
 }

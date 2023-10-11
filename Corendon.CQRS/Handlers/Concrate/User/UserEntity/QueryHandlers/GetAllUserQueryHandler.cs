@@ -4,10 +4,11 @@ using Corendon.CQRS.Handlers.Abstract.User.UserEntity.QueryHandlers;
 using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Request;
 using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Response;
 using Corendon.Data.Entity.Abstract.User;
+using Corendon.ViewModels.Abstract.User;
 
 namespace Corendon.CQRS.Handlers.Concrate.User.UserEntity.QueryHandlers
 {
-    public class GetAllUserQueryHandler : IGetAllUserQueryHandler
+    public sealed class GetAllUserQueryHandler : IGetAllUserQueryHandler
     {
         private readonly IUserEntityService _userEntityService;
         private readonly IMapper _mapper;
@@ -18,10 +19,11 @@ namespace Corendon.CQRS.Handlers.Concrate.User.UserEntity.QueryHandlers
             _mapper = mapper;
         }
 
-        public async Task<IList<GetAllUserQueryResponse>> Handle(GetAllUserQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetAllUserQueryResponse> Handle(GetAllUserQueryRequest request, CancellationToken cancellationToken)
         {
-            IList<IUserEntity> users = await _userEntityService.GetUserListAsync();
-            return _mapper.Map<IList<GetAllUserQueryResponse>>(users);
+            IEnumerable<IUserEntity> users = await _userEntityService.GetUserListAsync();
+            IEnumerable<IUserEntityVM> userEntityViewModels = _mapper.Map<IEnumerable<IUserEntityVM>>(users);
+            return _mapper.Map<GetAllUserQueryResponse>(userEntityViewModels);
         }
     }
 }

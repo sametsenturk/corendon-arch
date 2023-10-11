@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Response;
+using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Response;
 using Corendon.Data.Entity.Abstract.User;
+using Corendon.ViewModels.Abstract.User;
 
 namespace Corendon.Mapper.Profiles.User
 {
@@ -8,7 +9,7 @@ namespace Corendon.Mapper.Profiles.User
     {
         public UserEntityMapperProfile()
         {
-            CreateMap<IGetAllUserQueryResponse, IUserEntity>().ReverseMap();
+            CreateMap<IUserEntityVM, IUserEntity>().ReverseMap();
         }
     }
 }
