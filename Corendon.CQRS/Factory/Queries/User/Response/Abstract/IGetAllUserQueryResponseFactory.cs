@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Corendon.CQRS.Factory.Queries.User.Response.Abstract
 {
-    public interface IGetAllUserQueryResponseFactory : IBaseQueryAbstractFactory<GetAllUserQueryResponse, IUserEntityVM>
+    public interface IGetAllUserQueryResponseFactory : IBaseQueryAbstractFactory<GetAllUserQueryResponse, IUserEntityModel>
     {
     }
 }

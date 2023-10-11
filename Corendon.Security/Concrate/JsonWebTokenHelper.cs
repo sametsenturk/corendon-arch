@@ -35,7 +35,7 @@ namespace Corendon.Security.Concrate
                     signingCredentials: new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256)
                 );
 
-            throw new NotImplementedException();
+            return new JwtSecurityTokenHandler().WriteToken(jwt);
         }
     }
 }

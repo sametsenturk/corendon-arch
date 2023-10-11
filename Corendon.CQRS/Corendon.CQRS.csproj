@@ -27,7 +27,7 @@
     <Folder Include="Commands\Concrate\User\UserAnnouncementVoteEntity\Commands\Response\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Request\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Response\" />
-    <Folder Include="Factory\Commands\" />
+    <Folder Include="Factory\Commands\User\Request\" />
     <Folder Include="Factory\Queries\User\Request\" />
     <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\QueryHandlers\" />

@@ -25,7 +25,7 @@ namespace Corendon.CQRS.Handlers.Concrate.User.UserEntity.QueryHandlers
         public async Task<GetAllUserQueryResponse> Handle(GetAllUserQueryRequest request, CancellationToken cancellationToken)
         {
             IEnumerable<IUserEntity> users = await _userEntityService.GetUserListAsync();
-            IEnumerable<IUserEntityVM> userEntityViewModels = _mapper.Map<IEnumerable<IUserEntityVM>>(users);
+            IEnumerable<IUserEntityModel> userEntityViewModels = _mapper.Map<IEnumerable<IUserEntityModel>>(users);
             return _getAllUserQueryResponseFactory.Create(userEntityViewModels);
         }
     }

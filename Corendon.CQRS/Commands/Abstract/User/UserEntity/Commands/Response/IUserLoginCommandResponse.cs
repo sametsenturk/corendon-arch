@@ -8,6 +8,5 @@ namespace Corendon.CQRS.Commands.Abstract.User.UserEntity.Commands.Response
 {
     public interface IUserLoginCommandResponse
     {
-        void SetIsSuccess(bool isSuccess);
     }
 }

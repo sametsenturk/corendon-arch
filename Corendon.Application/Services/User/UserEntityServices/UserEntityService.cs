@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Corendon.Application.Result.Factory;
+using Corendon.Application.Result.Model;
 using Corendon.Application.Services.BaseServices;
 using Corendon.Data.Entity.Abstract.User;
 using Corendon.Repository.Repositories.User.UserEntityRepositories;
@@ -9,36 +11,74 @@ namespace Corendon.Application.Services.User.UserEntityServices
 {
     public class UserEntityService : CorendonDbBaseService, IUserEntityService
     {
-        private readonly IUserEntityRepository _userEntityRepository;        
+        private readonly IUserEntityRepository _userEntityRepository;
         private readonly IMapper _mapper;
         private readonly IJsonWebTokenHelper _jsonWebTokenHelper;
+        private readonly IServiceResultAbstractFactory<IUserEntityModel> _resultFactory;
 
-        public UserEntityService(IUserEntityRepository userEntityRepository, IMapper mapper, IJsonWebTokenHelper jsonWebTokenHelper)
+        public UserEntityService(IUserEntityRepository userEntityRepository, IMapper mapper, IJsonWebTokenHelper jsonWebTokenHelper, IServiceResultAbstractFactory<IUserEntityModel> resultFactory)
         {
             _userEntityRepository = userEntityRepository;
             _mapper = mapper;
             _jsonWebTokenHelper = jsonWebTokenHelper;
+            _resultFactory = resultFactory;
         }
 
-        public async Task<IEnumerable<IUserEntity>> GetUserListAsync() => await _userEntityRepository.GetListAsync();
-
-        public async Task<IUserEntityVM?> LogInAsync(string username, string password)
+        public async Task<IServiceResult<IUserEntityModel>> GetUserListAsync()
         {
-            // TODO : Hash incoming password and compare hashed password
-            IUserEntity user = await _userEntityRepository.GetAsync(x => x.Username == username && x.Password == password);
+            IServiceResult<IUserEntityModel> result = _resultFactory.Create();
 
-            IUserEntityVM? userVM = null;
-            
-            if(user != null)
+            try
             {
-                userVM = _mapper.Map<IUserEntityVM>(user);
-                if (!user.IsLockedAccount())
-                {
-                    userVM.SetJWT(_jsonWebTokenHelper.GenerateJsonWebToken(user));
-                }
+                IEnumerable<IUserEntity> users = await _userEntityRepository.GetListAsync();
+                result.SetDataList(_mapper.Map<IEnumerable<IUserEntityModel>>(users));
+            }
+            catch (Exception ex)
+            {
+                result.SetIsSuccess(false);
+                result.SetErrorMessage(ex.Message);
             }
 
-            return userVM;
+            return result;
         }
+
+        public async Task<IServiceResult<IUserEntityModel>> LogInAsync(string username, string password)
+        {
+            IServiceResult<IUserEntityModel> result = _resultFactory.Create();
+
+            try
+            {
+                // TODO : Hash incoming password and compare hashed password
+                IUserEntity user = await _userEntityRepository.GetAsync(x => x.Username == username && x.Password == password);
+
+                if (user != null)
+                {
+                    if (!user.IsLockedAccount())
+                    {
+                        IUserEntityModel userModel = _mapper.Map<IUserEntityModel>(user);
+                        userModel.SetJWT(_jsonWebTokenHelper.GenerateJsonWebToken(user));
+                        result.SetData(userModel);
+                    }
+                    else
+                    {
+                        result.SetIsSuccess(false);
+                        result.SetErrorMessage("");
+                    }
+                }
+                else
+                {
+                    result.SetIsSuccess(false);
+                    result.SetErrorMessage("");
+                }
+            }
+            catch (Exception ex)
+            {
+                result.SetIsSuccess(false);
+                result.SetErrorMessage(ex.Message);
+            }
+
+            return result;
+        }
+
     }
 }

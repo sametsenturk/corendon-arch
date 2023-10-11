@@ -4,7 +4,7 @@ using Corendon.ViewModels.Abstract.User;
 
 namespace Corendon.ViewModels.Concrate.User
 {
-    public class UserEntityVM : BaseEntity, IUserEntityVM
+    public class UserEntityModel : BaseEntity, IUserEntityModel
     {
         public string? Username { get; set; }
         public string? Email { get; set; }
@@ -17,7 +17,7 @@ namespace Corendon.ViewModels.Concrate.User
         public UserTypeEnum UserType { get; set; }
         public string? JWT{ get; set; }
 
-        public IUserEntityVM GetInstance() => new UserEntityVM();
+        public IUserEntityModel GetInstance() => new UserEntityModel();
 
         public void SetJWT(string jwt) => this.JWT = jwt;
     }

@@ -56,6 +56,12 @@ builder.Services.RegisterUserServices();
 
 #endregion
 
+#region Application Service Model Registiration
+
+builder.Services.RegisterResultModels();
+
+#endregion
+
 #region CQRS Query Registiration 
 
 builder.Services.RegisterUserQueries();

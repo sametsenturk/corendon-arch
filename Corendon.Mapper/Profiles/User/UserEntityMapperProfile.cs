@@ -9,7 +9,7 @@ namespace Corendon.Mapper.Profiles.User
     {
         public UserEntityMapperProfile()
         {
-            CreateMap<IUserEntityVM, IUserEntity>().ReverseMap();
+            CreateMap<IUserEntityModel, IUserEntity>().ReverseMap();
         }
     }
 }

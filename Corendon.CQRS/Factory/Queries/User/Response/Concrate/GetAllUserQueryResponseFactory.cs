@@ -6,7 +6,7 @@ namespace Corendon.CQRS.Factory.Queries.User.Response.Concrate
 {
     public class GetAllUserQueryResponseFactory : IGetAllUserQueryResponseFactory
     {
-        public GetAllUserQueryResponse Create(IEnumerable<IUserEntityVM> valueEntities)
+        public GetAllUserQueryResponse Create(IEnumerable<IUserEntityModel> valueEntities)
         {
             return new GetAllUserQueryResponse
             {

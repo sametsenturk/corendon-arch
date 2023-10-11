@@ -1,8 +1,8 @@
 ﻿namespace Corendon.ViewModels.Abstract.User
 {
-    public interface IUserEntityVM
+    public interface IUserEntityModel
     {
         void SetJWT(string jwt);
-        IUserEntityVM GetInstance();
+        IUserEntityModel GetInstance();
     }
 }
