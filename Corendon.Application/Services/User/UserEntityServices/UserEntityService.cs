@@ -9,9 +9,9 @@ namespace Corendon.Application.Services.User.UserEntityServices
 {
     public class UserEntityService : CorendonDbBaseService, IUserEntityService
     {
-        private readonly IUserEntityRepository _userEntityRepository;
-        private readonly IJsonWebTokenHelper _jsonWebTokenHelper;
+        private readonly IUserEntityRepository _userEntityRepository;        
         private readonly IMapper _mapper;
+        private readonly IJsonWebTokenHelper _jsonWebTokenHelper;
 
         public UserEntityService(IUserEntityRepository userEntityRepository, IMapper mapper, IJsonWebTokenHelper jsonWebTokenHelper)
         {
