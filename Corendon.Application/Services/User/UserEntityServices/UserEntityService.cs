@@ -2,6 +2,7 @@
 using Corendon.Application.Services.BaseServices;
 using Corendon.Data.Entity.Abstract.User;
 using Corendon.Repository.Repositories.User.UserEntityRepositories;
+using Corendon.Security.Abstract;
 using Corendon.ViewModels.Abstract.User;
 
 namespace Corendon.Application.Services.User.UserEntityServices
@@ -9,13 +10,14 @@ namespace Corendon.Application.Services.User.UserEntityServices
     public class UserEntityService : CorendonDbBaseService, IUserEntityService
     {
         private readonly IUserEntityRepository _userEntityRepository;
-
+        private readonly IJsonWebTokenHelper _jsonWebTokenHelper;
         private readonly IMapper _mapper;
 
-        public UserEntityService(IUserEntityRepository userEntityRepository, IMapper mapper)
+        public UserEntityService(IUserEntityRepository userEntityRepository, IMapper mapper, IJsonWebTokenHelper jsonWebTokenHelper)
         {
             _userEntityRepository = userEntityRepository;
             _mapper = mapper;
+            _jsonWebTokenHelper = jsonWebTokenHelper;
         }
 
         public async Task<IEnumerable<IUserEntity>> GetUserListAsync() => await _userEntityRepository.GetListAsync();
@@ -32,7 +34,7 @@ namespace Corendon.Application.Services.User.UserEntityServices
                 userVM = _mapper.Map<IUserEntityVM>(user);
                 if (!user.IsLockedAccount())
                 {
-                    //userVM.SetJWT();
+                    userVM.SetJWT(_jsonWebTokenHelper.GenerateJsonWebToken(user));
                 }
             }
 

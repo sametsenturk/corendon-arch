@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Corendon.Data\Corendon.Data.csproj" />
     <ProjectReference Include="..\Corendon.Repository\Corendon.Repository.csproj" />
+    <ProjectReference Include="..\Corendon.Security\Corendon.Security.csproj" />
     <ProjectReference Include="..\Corendon.ViewModels\Corendon.ViewModels.csproj" />
   </ItemGroup>
 
