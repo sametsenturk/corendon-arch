@@ -9,5 +9,6 @@ namespace Corendon.CQRS.Factory.Queries
     public interface IBaseQueryAbstractFactory<TEntity, TValueEntity>
     {
         TEntity Create(IEnumerable<TValueEntity> valueEntities);
+        TEntity Create(TValueEntity valueEntity);
     }
 }

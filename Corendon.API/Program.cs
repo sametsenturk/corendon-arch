@@ -5,7 +5,6 @@ using Corendon.Entity.Context;
 using Corendon.Factory.IoC;
 using Corendon.Repository.IoC;
 using System.Reflection;
-using Corendon.Mapper;
 using Corendon.Mapper.IoC;
 using Corendon.Security.IoC;
 
@@ -32,6 +31,8 @@ builder.Services.RegisterAnnouncementFactories();
 builder.Services.RegisterCompanyFactories();
 builder.Services.RegisterUserFactories();
 builder.Services.RegisterUserCQRSFactories();
+builder.Services.RegisterAnnouncementCQRSFactories();
+
 #endregion
 
 #region Security Service Registiration
@@ -70,15 +71,10 @@ builder.Services.RegisterUserQueries();
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-#region CQRS Command Handler Registiration
-
-
-
-#endregion
-
-#region CQRS Query Handler Registiration
+#region CQRS Handler Registiration
 
 builder.Services.RegisterUserHandlers();
+builder.Services.RegisterAnnouncementHandlers();
 
 #endregion
 

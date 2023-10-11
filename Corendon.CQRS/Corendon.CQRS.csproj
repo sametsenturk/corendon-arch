@@ -27,10 +27,11 @@
     <Folder Include="Commands\Concrate\User\UserAnnouncementVoteEntity\Commands\Response\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Request\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Response\" />
+    <Folder Include="Factory\Commands\Announcement\" />
     <Folder Include="Factory\Commands\User\Request\" />
+    <Folder Include="Factory\Queries\Announcement\Request\" />
     <Folder Include="Factory\Queries\User\Request\" />
     <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\CommandHandlers\" />
-    <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\QueryHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\QueryHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyEntity\CommandHandlers\" />
@@ -42,7 +43,6 @@
     <Folder Include="Handlers\Abstract\User\UserNotificationEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\User\UserNotificationEntity\QueryHandlers\" />
     <Folder Include="Handlers\Concrate\Announcement\AnnouncementEntity\CommandHandlers\" />
-    <Folder Include="Handlers\Concrate\Announcement\AnnouncementEntity\QueryHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\CommandHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\QueryHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyEntity\CommandHandlers\" />
@@ -53,8 +53,6 @@
     <Folder Include="Handlers\Concrate\User\UserAnnouncementVoteEntity\QueryHandlers\" />
     <Folder Include="Handlers\Concrate\User\UserNotificationEntity\CommandHandlers\" />
     <Folder Include="Handlers\Concrate\User\UserNotificationEntity\QueryHandlers\" />
-    <Folder Include="Queries\Abstract\Announcement\AnnouncementEntity\Queries\Request\" />
-    <Folder Include="Queries\Abstract\Announcement\AnnouncementEntity\Queries\Response\" />
     <Folder Include="Queries\Abstract\Company\CompanyDepartmentEntity\Queries\Request\" />
     <Folder Include="Queries\Abstract\Company\CompanyDepartmentEntity\Queries\Response\" />
     <Folder Include="Queries\Abstract\Company\CompanyEntity\Queries\Request\" />
@@ -65,8 +63,6 @@
     <Folder Include="Queries\Abstract\User\UserAnnouncementVoteEntity\Queries\Response\" />
     <Folder Include="Queries\Abstract\User\UserNotificationEntity\Queries\Request\" />
     <Folder Include="Queries\Abstract\User\UserNotificationEntity\Queries\Response\" />
-    <Folder Include="Queries\Concrate\Announcement\AnnouncementEntity\Queries\Request\" />
-    <Folder Include="Queries\Concrate\Announcement\AnnouncementEntity\Queries\Response\" />
     <Folder Include="Queries\Concrate\Company\CompanyDepartmentEntity\Queries\Request\" />
     <Folder Include="Queries\Concrate\Company\CompanyDepartmentEntity\Queries\Response\" />
     <Folder Include="Queries\Concrate\Company\CompanyEntity\Queries\Request\" />
