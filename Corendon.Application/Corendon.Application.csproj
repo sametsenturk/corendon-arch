@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corendon.Constants\Corendon.Constants.csproj" />
     <ProjectReference Include="..\Corendon.Data\Corendon.Data.csproj" />
     <ProjectReference Include="..\Corendon.Repository\Corendon.Repository.csproj" />
     <ProjectReference Include="..\Corendon.Security\Corendon.Security.csproj" />

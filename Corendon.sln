@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.API", "Corendon.API\Corendon.API.csproj", "{3ECEDA92-1D1D-43E0-A6D3-28A166F0A14F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.API", "Corendon.API\Corendon.API.csproj", "{3ECEDA92-1D1D-43E0-A6D3-28A166F0A14F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructre", "Infrastructre", "{F1E8488E-74C3-49E8-A505-2D1270870E9E}"
 EndProject
@@ -11,27 +11,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{72
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7216BC5C-9F91-4CC6-8131-694C06280D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Data", "Corendon.Data\Corendon.Data.csproj", "{7085FF3C-4E59-44A0-86ED-6DB93D3E8E92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Data", "Corendon.Data\Corendon.Data.csproj", "{7085FF3C-4E59-44A0-86ED-6DB93D3E8E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Common", "Corendon.Common\Corendon.Common.csproj", "{9551F3F7-3989-41E7-89F2-8967364DF005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Common", "Corendon.Common\Corendon.Common.csproj", "{9551F3F7-3989-41E7-89F2-8967364DF005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Entity", "Corendon.Entity\Corendon.Entity.csproj", "{4A6ACC09-2007-4742-BC1F-76C1C50A7EF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Entity", "Corendon.Entity\Corendon.Entity.csproj", "{4A6ACC09-2007-4742-BC1F-76C1C50A7EF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Mapper", "Corendon.Mapper\Corendon.Mapper.csproj", "{BA6105F9-E2E0-4853-A739-47E46B612C77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Mapper", "Corendon.Mapper\Corendon.Mapper.csproj", "{BA6105F9-E2E0-4853-A739-47E46B612C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Attributes", "Corendon.Attributes\Corendon.Attributes.csproj", "{EE81C1FA-DE32-4010-BA30-EBCFD93BBCC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Attributes", "Corendon.Attributes\Corendon.Attributes.csproj", "{EE81C1FA-DE32-4010-BA30-EBCFD93BBCC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Security", "Corendon.Security\Corendon.Security.csproj", "{70644EF6-14A8-4C37-A692-57A120FEDCF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Security", "Corendon.Security\Corendon.Security.csproj", "{70644EF6-14A8-4C37-A692-57A120FEDCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Factory", "Corendon.Factory\Corendon.Factory.csproj", "{D0643828-43A5-4EEE-86F8-DA2F33756DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Factory", "Corendon.Factory\Corendon.Factory.csproj", "{D0643828-43A5-4EEE-86F8-DA2F33756DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Repository", "Corendon.Repository\Corendon.Repository.csproj", "{B8114646-0FFE-40E5-B48C-9586791E020E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Repository", "Corendon.Repository\Corendon.Repository.csproj", "{B8114646-0FFE-40E5-B48C-9586791E020E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Application", "Corendon.Application\Corendon.Application.csproj", "{EC1652FA-D767-4ED4-9242-760F68E24369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.Application", "Corendon.Application\Corendon.Application.csproj", "{EC1652FA-D767-4ED4-9242-760F68E24369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.CQRS", "Corendon.CQRS\Corendon.CQRS.csproj", "{7967FD0F-CF7D-4D05-AC39-4B10A17DB3FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.CQRS", "Corendon.CQRS\Corendon.CQRS.csproj", "{7967FD0F-CF7D-4D05-AC39-4B10A17DB3FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.ViewModels", "Corendon.ViewModels\Corendon.ViewModels.csproj", "{E05300CB-7A0A-4548-BF9C-909563075812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corendon.ViewModels", "Corendon.ViewModels\Corendon.ViewModels.csproj", "{E05300CB-7A0A-4548-BF9C-909563075812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corendon.Constants", "Corendon.Constants\Corendon.Constants.csproj", "{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{E05300CB-7A0A-4548-BF9C-909563075812}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E05300CB-7A0A-4548-BF9C-909563075812}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E05300CB-7A0A-4548-BF9C-909563075812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +109,7 @@ Global
 		{EC1652FA-D767-4ED4-9242-760F68E24369} = {7216BC5C-9F91-4CC6-8131-694C06280D3F}
 		{7967FD0F-CF7D-4D05-AC39-4B10A17DB3FC} = {720BF726-6BA8-407B-8380-EB73297FDBCB}
 		{E05300CB-7A0A-4548-BF9C-909563075812} = {F1E8488E-74C3-49E8-A505-2D1270870E9E}
+		{6DE3A34C-7ACE-4A7A-A64A-0DDEBDBEA094} = {F1E8488E-74C3-49E8-A505-2D1270870E9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {29412C58-D1EB-43B5-A354-DB99C192C5C1}

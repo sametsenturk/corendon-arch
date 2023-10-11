@@ -1,4 +1,5 @@
-﻿using Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Request;
+﻿using Corendon.CQRS.Commands.Concrate.User.UserEntity.Commands.Request;
+using Corendon.CQRS.Commands.Concrate.User.UserEntity.Commands.Response;
 using Corendon.CQRS.Queries.Abstract.User.UserEntity.Queries.Response;
 using Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Request;
 using MediatR;
@@ -23,7 +24,11 @@ namespace Corendon.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LogIn([FromBody] )
+        public async Task<IActionResult> LogIn([FromBody] UserLoginCommandRequest request)
+        {
+            UserLoginCommandResponse response = await _mediator.Send(request);
+            return Ok(response);
+        }
 
     }
 }

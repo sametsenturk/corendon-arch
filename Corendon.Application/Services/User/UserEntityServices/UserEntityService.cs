@@ -2,6 +2,7 @@
 using Corendon.Application.Result.Factory;
 using Corendon.Application.Result.Model;
 using Corendon.Application.Services.BaseServices;
+using Corendon.Constants.User;
 using Corendon.Data.Entity.Abstract.User;
 using Corendon.Repository.Repositories.User.UserEntityRepositories;
 using Corendon.Security.Abstract;
@@ -62,13 +63,13 @@ namespace Corendon.Application.Services.User.UserEntityServices
                     else
                     {
                         result.SetIsSuccess(false);
-                        result.SetErrorMessage("");
+                        result.SetErrorMessage(MessageConstants.UserMessageConstants.UserAccountLocked);
                     }
                 }
                 else
                 {
                     result.SetIsSuccess(false);
-                    result.SetErrorMessage("");
+                    result.SetErrorMessage(MessageConstants.UserMessageConstants.UserNotFound);
                 }
             }
             catch (Exception ex)
