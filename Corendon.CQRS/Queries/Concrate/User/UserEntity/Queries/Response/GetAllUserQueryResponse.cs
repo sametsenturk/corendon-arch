@@ -5,6 +5,6 @@ namespace Corendon.CQRS.Queries.Concrate.User.UserEntity.Queries.Response
 {
     public sealed class GetAllUserQueryResponse : IGetAllUserQueryResponse
     {
-        public IList<IUserEntityVM>? User { get; set; }
+        public IEnumerable<IUserEntityVM>? Users { get; set; }
     }
 }

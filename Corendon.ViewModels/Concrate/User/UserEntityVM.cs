@@ -15,5 +15,10 @@ namespace Corendon.ViewModels.Concrate.User
         public int DepartmentId { get; set; }
         public string? DepartmentName { get; set; }
         public UserTypeEnum UserType { get; set; }
+        public string? JWT{ get; set; }
+
+        public IUserEntityVM GetInstance() => new UserEntityVM();
+
+        public void SetJWT(string jwt) => this.JWT = jwt;
     }
 }

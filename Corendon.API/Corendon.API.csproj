@@ -32,6 +32,7 @@
     <ProjectReference Include="..\Corendon.Factory\Corendon.Factory.csproj" />
     <ProjectReference Include="..\Corendon.Mapper\Corendon.Mapper.csproj" />
     <ProjectReference Include="..\Corendon.Repository\Corendon.Repository.csproj" />
+    <ProjectReference Include="..\Corendon.Security\Corendon.Security.csproj" />
   </ItemGroup>
 
 </Project>

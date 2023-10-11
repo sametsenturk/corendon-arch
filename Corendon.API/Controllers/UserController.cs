@@ -22,6 +22,8 @@ namespace Corendon.API.Controllers
             return Ok(response);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> LogIn([FromBody] )
 
     }
 }

@@ -7,16 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corendon.CQRS\Corendon.CQRS.csproj" />
     <ProjectReference Include="..\Corendon.Data\Corendon.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Abstract\Announcement\Queries\" />
     <Folder Include="Abstract\Company\Queries\" />
-    <Folder Include="Abstract\User\Queries\" />
     <Folder Include="Concrate\Announcement\Queries\" />
     <Folder Include="Concrate\Company\Queries\" />
-    <Folder Include="Concrate\User\Queries\" />
   </ItemGroup>
 
 </Project>

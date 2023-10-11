@@ -12,5 +12,7 @@ namespace Corendon.Data.Entity.Abstract.User
         bool IsLockedAccount();
         bool IsEmployee();
         bool IsManager();
+        UserTypeEnum GetUserType();
+        int GetId();
     }
 }

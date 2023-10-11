@@ -8,8 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Abstract\" />
-    <Folder Include="Concrate\" />
-    <Folder Include="IoC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Corendon.Data\Corendon.Data.csproj" />
   </ItemGroup>
 
 </Project>

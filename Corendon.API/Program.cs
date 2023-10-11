@@ -7,6 +7,7 @@ using Corendon.Repository.IoC;
 using System.Reflection;
 using Corendon.Mapper;
 using Corendon.Mapper.IoC;
+using Corendon.Security.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,12 @@ builder.Services.RegisterEntityInheritances();
 builder.Services.RegisterAnnouncementFactories();
 builder.Services.RegisterCompanyFactories();
 builder.Services.RegisterUserFactories();
+builder.Services.RegisterUserCQRSFactories();
+#endregion
+
+#region Security Service Registiration
+
+builder.Services.RegisterSecurityServices();
 
 #endregion
 

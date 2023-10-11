@@ -2,5 +2,7 @@
 {
     public interface IUserEntityVM
     {
+        void SetJWT(string jwt);
+        IUserEntityVM GetInstance();
     }
 }
