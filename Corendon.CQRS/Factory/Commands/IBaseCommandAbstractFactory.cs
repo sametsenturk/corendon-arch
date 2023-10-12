@@ -3,8 +3,8 @@ using Corendon.CQRS.Commands.Concrate.User.UserEntity.Commands.Response;
 
 namespace Corendon.CQRS.Factory.Commands
 {
-    public interface IBaseCommandAbstractFactory<TEntity>
+    public interface IBaseCommandAbstractFactory<TEntity, TResponse>
     {
-        UserLoginCommandResponse Create(IServiceResult<TEntity> result);
+        TResponse Create(IServiceResult<TEntity> result);
     }
 }

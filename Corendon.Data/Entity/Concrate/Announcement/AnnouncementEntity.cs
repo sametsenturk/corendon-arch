@@ -19,6 +19,10 @@ namespace Corendon.Data.Entity.Concrate.Announcement
 
         public bool IsUrgentAnnouncement() => this.AnnouncementType == AnnouncementTypeEnum.Urgent;
 
+        public int GetId() => this.Id;
+
+        public bool IsIdAvailable() => this.Id != 0;
+
         public virtual List<UserAnnouncementVoteEntity>? UserAnnouncementVotes { get; set; }
         public virtual List<UserAnnouncementCommentEntity>? UserAnnouncementComments { get; set; }
         public virtual List<UserNotificationEntity>? UserNotifications { get; set; }

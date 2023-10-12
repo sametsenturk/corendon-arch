@@ -2,7 +2,6 @@
 using Corendon.Data.Entity.Concrate.Announcement;
 using Corendon.Data.Entity.Concrate.Company;
 using Corendon.Data.Entity.Concrate.User;
-using Corendon.Data.EntityConfigurationMapping;
 using Corendon.Data.EntityConfigurationMapping.AnnouncementEntityConfiguration;
 using Corendon.Data.EntityConfigurationMapping.CompanyEntityConfiguration;
 using Corendon.Data.EntityConfigurationMapping.UserEntityConfiguration;

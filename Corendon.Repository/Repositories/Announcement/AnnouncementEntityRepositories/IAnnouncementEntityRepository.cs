@@ -4,7 +4,7 @@ using Corendon.Data.Repository.Abstract;
 
 namespace Corendon.Repository.Repositories.Announcement.AnnouncementEntityRepositories
 {
-    public interface IAnnouncementEntityRepository : IEntityRepository<AnnouncementEntity>
+    public interface IAnnouncementEntityRepository : IEntityRepository<IAnnouncementEntity>
     {
     }
 }

@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Abstract\Announcement\AnnouncementEntity\Commands\Response\" />
-    <Folder Include="Commands\Abstract\Announcement\AnnouncementEntity\Commands\Request\" />
     <Folder Include="Commands\Abstract\Company\CompanyDepartmentEntity\Commands\Request\" />
     <Folder Include="Commands\Abstract\Company\CompanyDepartmentEntity\Commands\Response\" />
     <Folder Include="Commands\Abstract\Company\CompanyEntity\Commands\Request\" />
@@ -19,7 +17,6 @@
     <Folder Include="Commands\Abstract\User\UserAnnouncementVoteEntity\Commands\Response\" />
     <Folder Include="Commands\Abstract\User\UserNotificationEntity\Commands\Request\" />
     <Folder Include="Commands\Abstract\User\UserNotificationEntity\Commands\Response\" />
-    <Folder Include="Commands\Concrate\Announcement\" />
     <Folder Include="Commands\Concrate\Company\" />
     <Folder Include="Commands\Concrate\User\UserAnnouncementCommentEntity\Commands\Request\" />
     <Folder Include="Commands\Concrate\User\UserAnnouncementCommentEntity\Commands\Response\" />
@@ -27,11 +24,10 @@
     <Folder Include="Commands\Concrate\User\UserAnnouncementVoteEntity\Commands\Response\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Request\" />
     <Folder Include="Commands\Concrate\User\UserNotificationEntity\Commands\Response\" />
-    <Folder Include="Factory\Commands\Announcement\" />
+    <Folder Include="Factory\Commands\Announcement\Request\" />
     <Folder Include="Factory\Commands\User\Request\" />
     <Folder Include="Factory\Queries\Announcement\Request\" />
     <Folder Include="Factory\Queries\User\Request\" />
-    <Folder Include="Handlers\Abstract\Announcement\AnnouncementEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyDepartmentEntity\QueryHandlers\" />
     <Folder Include="Handlers\Abstract\Company\CompanyEntity\CommandHandlers\" />
@@ -42,7 +38,6 @@
     <Folder Include="Handlers\Abstract\User\UserAnnouncementVoteEntity\QueryHandlers\" />
     <Folder Include="Handlers\Abstract\User\UserNotificationEntity\CommandHandlers\" />
     <Folder Include="Handlers\Abstract\User\UserNotificationEntity\QueryHandlers\" />
-    <Folder Include="Handlers\Concrate\Announcement\AnnouncementEntity\CommandHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\CommandHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyDepartmentEntity\QueryHandlers\" />
     <Folder Include="Handlers\Concrate\Company\CompanyEntity\CommandHandlers\" />

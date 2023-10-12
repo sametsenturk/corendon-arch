@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Corendon.Mapper.Profiles.Announcement;
 using Corendon.Mapper.Profiles.User;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +13,7 @@ namespace Corendon.Mapper.IoC
             {
                 #region Announcement Profiles
 
+                config.AddProfile<AnnouncementEntityMapperProfile>();
 
                 #endregion
 

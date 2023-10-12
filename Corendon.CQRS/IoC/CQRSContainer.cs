@@ -1,12 +1,17 @@
 ﻿using Corendon.CQRS.Commands.Abstract.User.UserEntity.Commands.Response;
+using Corendon.CQRS.Commands.Concrate.Announcement.Commands.Request;
+using Corendon.CQRS.Commands.Concrate.Announcement.Commands.Response;
 using Corendon.CQRS.Commands.Concrate.User.UserEntity.Commands.Request;
 using Corendon.CQRS.Commands.Concrate.User.UserEntity.Commands.Response;
+using Corendon.CQRS.Factory.Commands.Announcement.Response.Abstract;
+using Corendon.CQRS.Factory.Commands.Announcement.Response.Concrate;
 using Corendon.CQRS.Factory.Commands.User.Response.Abstract;
 using Corendon.CQRS.Factory.Commands.User.Response.Concrate;
 using Corendon.CQRS.Factory.Queries.Announcement.Response.Abstract;
 using Corendon.CQRS.Factory.Queries.Announcement.Response.Concrate;
 using Corendon.CQRS.Factory.Queries.User.Response.Abstract;
 using Corendon.CQRS.Factory.Queries.User.Response.Concrate;
+using Corendon.CQRS.Handlers.Concrate.Announcement.AnnouncementEntity.CommandHandlers;
 using Corendon.CQRS.Handlers.Concrate.Announcement.AnnouncementEntity.QueryHandlers;
 using Corendon.CQRS.Handlers.Concrate.User.UserEntity.CommandHandlers;
 using Corendon.CQRS.Handlers.Concrate.User.UserEntity.QueryHandlers;
@@ -32,6 +37,8 @@ namespace Corendon.CQRS.IoC
         public static void RegisterAnnouncementCQRSFactories(this IServiceCollection services)
         {
             services.AddScoped<IGetAllAnnouncementQueryResponseFactory, GetAllAnnouncementQueryResponseFactory>();
+            services.AddScoped<IPutAnnouncementCommandResponseFactory, PutAnnouncementCommandResponseFactory>();
+            services.AddScoped<IDeleteAnnouncementCommandResponseFactory, DeleteAnnouncementCommandResponseFactory>();
         }
 
         public static void RegisterUserQueries(this IServiceCollection services)
@@ -50,6 +57,8 @@ namespace Corendon.CQRS.IoC
         public static void RegisterAnnouncementHandlers(this IServiceCollection services)
         {
             services.AddTransient<IRequestHandler<GetAllAnnouncementQueryRequest, GetAllAnnouncementQueryResponse>, GetAllAnnouncementQueryHandler>();
+            services.AddTransient<IRequestHandler<PutAnnouncementCommandRequest, PutAnnouncementCommandResponse>, PutAnnouncementCommandHandler>();
+            services.AddTransient<IRequestHandler<DeleteAnnouncementCommandRequest, DeleteAnnouncementCommandResponse>, DeleteAnnouncementCommandHandler>();
         }
 
     }

@@ -9,5 +9,7 @@ namespace Corendon.Data.Entity.Abstract.Announcement
     public interface IAnnouncementEntity : IBaseEntity
     {
         bool IsUrgentAnnouncement();
+        int GetId();
+        bool IsIdAvailable();
     }
 }
